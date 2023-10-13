@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/sample")
+@app.route("/sample", methods=["GET"])
 def hello_world():
     res = {
         "Message":"Hello World!!!"
